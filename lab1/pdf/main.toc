@@ -1,0 +1,6 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Цель работы}{2}{section.1}%
+\contentsline {section}{\numberline {2}Индивидуальное задание}{2}{section.2}%
+\contentsline {section}{\numberline {3}Демонстрация}{3}{section.3}%
+\contentsline {section}{\numberline {4}Вывод}{4}{section.4}%
+\contentsline {section}{\numberline {5}\href {https://github.com/KLARKOFF/IT-and-Programming-labs}{Github}}{4}{section.5}%
