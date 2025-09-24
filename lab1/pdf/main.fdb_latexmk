@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758705957.8419 "main.tex" "main.pdf" "main" 1758705958.49441 0
+["pdflatex"] 1758706153.86752 "main.tex" "main.pdf" "main" 1758706154.5836 0
   "/home/nikolai/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1747124721.96086 3304 6a543c07045572737981351171e0505e ""
   "/home/nikolai/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1747125436.63062 3312 d199be9bd555944e2403193d58a0256a ""
   "/home/nikolai/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx2074.tfm" 1747249115.67058 3316 0992aa03d0c75498a0b6fb905d9eaab6 ""
@@ -94,10 +94,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742835748 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1747124823 329726 a823c7f37ac023ebf4af1fb27b901221 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1747124715 2088902 2efb9f0026f4a9595651f92a7bb8f1d1 ""
-  "main.aux" 1758705958.36272 1550 3e55a2005fff3f610e3af9ea5e91aa7f "pdflatex"
-  "main.out" 1758705958.36372 645 e3a6deb8821e09751ab441b82fea1c3a "pdflatex"
-  "main.tex" 1758705955.91072 3632 e6c1c1af2c2aa5070e8d59436b17a153 ""
-  "main.toc" 1758705958.36472 475 2f920b3178f66fef5f734aee8c0de5d5 "pdflatex"
+  "main.aux" 1758706154.38173 1550 3e55a2005fff3f610e3af9ea5e91aa7f "pdflatex"
+  "main.out" 1758706154.38273 645 e3a6deb8821e09751ab441b82fea1c3a "pdflatex"
+  "main.tex" 1758706152.08373 3744 0b457be24eac3ed27072a13677a108e9 ""
+  "main.toc" 1758706154.38373 475 2f920b3178f66fef5f734aee8c0de5d5 "pdflatex"
   "pics/palidrome.png" 1758705376.96168 73161 1c1e2a32681695912b33cf7ed5f271a3 ""
   "pics/palidrome_output.png" 1758705585.0527 103971 fb89b42139712ef9e778d49d4b9df9ba ""
   "pics/primes.png" 1758705345.62568 176132 303056b55520e58639798456da105c3f ""
