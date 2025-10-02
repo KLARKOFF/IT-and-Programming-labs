@@ -1,0 +1,6 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Цель работы}{2}{section.1}%
+\contentsline {section}{\numberline {2}Индивидуальное задание}{2}{section.2}%
+\contentsline {section}{\numberline {3}Демонстрация}{3}{section.3}%
+\contentsline {section}{\numberline {4}Вывод}{6}{section.4}%
+\contentsline {section}{\numberline {5}Github}{6}{section.5}%
