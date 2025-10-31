@@ -1,0 +1,182 @@
+\documentclass[a4paper, 17pt]{extarticle}
+% page margin
+\usepackage[margin=2cm]{geometry}
+% to use russian language
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+% to write math
+\usepackage{amsmath, amsthm, amssymb}
+% to use links
+\usepackage[colorlinks=true, linkcolor=red]{hyperref}
+% to use "" properly
+\usepackage{csquotes}
+% for work with pictures
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[thinlines]{easytable}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{ {./pics/} }
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \small{ \bfseries{
+    МИНИСТЕРСТВО ЦИФРОВОГО \\ РАЗВИТИЯ, СВЯЗИ И \\ МАССОВЫХ
+    КОММУНИКАЦИЙ \\ РОССИЙСКОЙ ФЕДЕРАГИИ \\ Ордена Трудового Красного
+    Знамени федеральное государственное бюджетное учреждение высшего
+    образования \enquote{Московский технический университет связи и
+    информатики}}\\
+  \mdseries}
+
+    \vspace{1.7cm}
+
+    \normalsize{Кафедра \enquote{Информационные технологии}} \\
+    \normalsize{Предмет \enquote{Математические Основы Баз Данных}}
+
+    \vspace{0.3cm}
+    \huge{Лабораторная работа №3} \\
+    \large{\textbf{Создание хэш таблицы и работа с HashMap}} \\
+    \vspace{0.3cm}
+    \normalsize{\textit{Вариант 2}}
+
+    \vspace{2.7cm}
+
+    \raggedleft 
+    \normalsize{Выполнил: \\ студент гр. БПИ2402 
+    \\\vspace{0.125cm} Поляков Н.А.\\}
+    \centering
+
+    \vspace{\fill}
+
+    Москва \\ 2025
+
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\section{Цель работы}
+
+Освоить работу с хэш-таблицами в Java. Научиться писать тип HashTable
+самостоятельно с помощью метода цепочек
+
+\section{Индивидуальное задание}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{задание1.png}
+\caption{}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{задание2.png}
+\caption{Задание 2. Работа с HashMap}
+\end{figure}
+
+\section{Выполнение}
+
+\subsection{Задание 1}
+
+Сначала я создал класс HashTable. В примере из листинга 3.3 использовались
+типы дженерики K и V для типов ключа и значения.
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{hashtable1.png}
+\caption{Класс HashTable}
+\end{figure}
+
+\pagebreak
+
+Далее создадим методы hash, put, get и remove:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{hash.png}
+\caption{метод hash}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{put.png}
+\caption{метод put}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{get.png}
+\caption{метод get}
+\end{figure}
+
+\pagebreak
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.7\textwidth]{remove.png}
+\caption{метод remove}
+\end{figure} 
+Дополнительно, по заданию, реализуем методы isEmpty, getSize:
+\begin{figure}[h!]
+  \includegraphics[width=\textwidth]{getSizeandempty.png}
+\caption{}
+\end{figure}
+
+Для удобства вывода всех значений я написал метод show, который
+показывает их:
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{show.png}
+\caption{}
+\end{figure}
+
+\pagebreak
+
+Теперь напишем тестовую программу, где добавим несколько значений в разные
+хэш-таблицы:
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{main111.png}
+\caption{}
+\end{figure}
+Здесь я сначала создаю таблицу с ключом-строкой и значением-числом, записываю
+в него случайные данные. Далее удаляю и смотрю, как будут меняться значения.
+
+После я создал таблицу isPrimeTable с ключом-числом и значением-числом. В нём
+я храню все числа от 0 до 999 и храню информацию о том, являются ли они простыми.
+Метод isPrime я взял из лабораторной работы 
+
+\subsection{Задание 2}
+
+Для выполнения второго задания я для начала создал класс Product, в котором
+будет храниться вся информация о конкретном продукте. А также класс 
+ProductManager, который будет хранить в себе хэш-таблицу с ключом-строкой
+и значением-объект класса product. Это распространённая практика управлением
+данными в Java:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{productclass.png}
+\caption{класс Product}
+\end{figure}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{productmanagerclass.png}
+\caption{класс ProductManager}
+\end{figure}
+
+\pagebreak
+
+Всё! Теперь напишем простую программу, в которой будем использовать
+все методы ProductManager:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{main222.png}
+\caption{Пример работы с ProductManager}
+\end{figure}
+
+\pagebreak
+
+\section{Вывод}
+
+Я освоил работу с хэш-таблица в Java, научился создавать свои собственные
+таблицы с помощью метода цепочек. А также дополнительно обучился работе с
+дженериками.
+
+\section{Github}
+https://github.com/KLARKOFF/IT-and-Programming-labs
+
+
+\end{document}
