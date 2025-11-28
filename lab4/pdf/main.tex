@@ -1,0 +1,161 @@
+\documentclass[a4paper, 17pt]{extarticle}
+% page margin
+\usepackage[margin=2cm]{geometry}
+% to use russian language
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+% to write math
+\usepackage{amsmath, amsthm, amssymb}
+% to use links
+\usepackage[colorlinks=true, linkcolor=red]{hyperref}
+% to use "" properly
+\usepackage{csquotes}
+% for work with pictures
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[thinlines]{easytable}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{ {./pics/} }
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \small{ \bfseries{
+    МИНИСТЕРСТВО ЦИФРОВОГО \\ РАЗВИТИЯ, СВЯЗИ И \\ МАССОВЫХ
+    КОММУНИКАЦИЙ \\ РОССИЙСКОЙ ФЕДЕРАГИИ \\ Ордена Трудового Красного
+    Знамени федеральное государственное бюджетное учреждение высшего
+    образования \enquote{Московский технический университет связи и
+    информатики}}\\
+  \mdseries}
+
+    \vspace{1.7cm}
+
+    \normalsize{Кафедра \enquote{Информационные технологии}} \\
+    \normalsize{Предмет \enquote{Математические Основы Баз Данных}}
+
+    \vspace{0.3cm}
+    \huge{Лабораторная работа №4} \\
+    \large{\textbf{Обработка исключений}} \\
+    \vspace{0.3cm}
+    \normalsize{\textit{Вариант 22}}
+
+    \vspace{2.7cm}
+
+    \raggedleft 
+    \normalsize{Выполнил: \\ студент гр. БПИ2402 
+    \\\vspace{0.125cm} Поляков Н.А.\\}
+    \centering
+
+    \vspace{\fill}
+
+    Москва \\ 2025
+
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\section{Цель работы}
+
+Научиться работать с ошибками в ходе выполнения кода. Освоить для этого оператор
+try-catch и все его особенности.
+
+\section{Индивидуальное задание}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{задание_1.jpg}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{задание_2.jpg}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{вариант.jpg}
+\end{figure}
+
+\clearpage
+
+\section{Выполнение}
+
+\subsection{Задание 1}
+
+Класс CustomDivisionException наследует класс Exception. 
+Для этого простого задания достаточно лишь написать в нём конструктор.
+Если бы мы хотели более продвинутую работу с ошибками, в этом классе
+можно было бы, например, хранить величину делимого.
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{cde_class.png}
+\caption{}
+\end{figure}
+
+\clearpage
+
+Использование нового класса тоже элементарно: участок кода, где
+может произойти деление на ноль, нужно засунуть в блок try-catch и
+обработать данную ошибку. Вот полная программа:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{cde_class_main.png}
+\caption{}
+\end{figure}
+
+\clearpage
+
+\subsection{Задание 2}
+
+Для начала создадим классы для кастомных ошибок:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{task2_classi.png}
+\caption{}
+\end{figure}
+
+Далее копируем файл в блоке try, где именно будет обрабатывать ошибки,
+связанные с открытием:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{task2_1.png}
+\caption{}
+\end{figure}
+
+В этом же блоке создаём ещё один try, только теперь обрабатываем
+ошибки, связанные с записью:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{task2_2.png}
+\caption{}
+\end{figure}
+
+\clearpage
+
+\subsection{Задание 3}
+
+Сначала создаём кастомный класс для ошибки неправильного
+ввода. В нём будем хранить сообщение об ошибке и сам неправильный
+ввод:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{task3_1.png}
+\caption{}
+\end{figure}
+
+Вот так он работает:
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{task3_2.png}
+\caption{}
+\end{figure}
+
+\section{Вывод}
+Я научился обрабатывать ошибки на языке Java, а также создавать
+свои собственные классы ошибок.
+
+\section{Github}
+https://github.com/KLARKOFF/IT-and-Programming-labs
+
+
+\end{document}

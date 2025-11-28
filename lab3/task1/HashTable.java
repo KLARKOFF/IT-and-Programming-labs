@@ -26,6 +26,8 @@ public class HashTable<K, V> {
   }
 
   private int hash(K key) {
+    if (key == null)
+      return 0;
     return Math.abs(key.hashCode() % table.length);
   }
   public int getSize() {
